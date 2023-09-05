@@ -1,0 +1,51 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+ul li:nth-child(2):hover:after {
+    content: tooltip;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #777;
+    color: #fff;
+    animation: fadeIn 2s;
+}
+
+
+
+
+ul li {
+    background-color: #777;
+    color: #fff;
+    transition: background-color 2s;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.first-li:hover {
+    background-color: orange;
+} 
+
+ul li:nth-child(2):active {
+    background-color: lightseagreen;
+}
+
+ul:last-child {
+    background-color: tomato;
+}
+
+#name-input:focus {
+    background-color: darkslategray;
+    color: #fff;
+}
